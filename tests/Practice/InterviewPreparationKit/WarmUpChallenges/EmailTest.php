@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
+include '/home/david/PhpstormProjects/hackerrank/src/Practice/InterviewPreparationKit/WarmUpChallenges/Email.php';
+
 final class EmailTest extends TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress(): void
