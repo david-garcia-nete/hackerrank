@@ -3,15 +3,15 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
-include '/home/david/PhpstormProjects/hackerrank/src/Practice/InterviewPreparationKit/WarmUpChallenges/Email.php';
+include '../../../../src/Practice/InterviewPreparationKit/WarmUpChallenges/SockMerchant.php';
 
-final class EmailTest extends TestCase
+final class SockMerchantTest extends TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress(): void
     {
         $this->assertInstanceOf(
-            Email::class,
-            Email::fromString('user@example.com')
+            SockMerchant::class,
+            SockMerchant::fromString('user@example.com')
         );
     }
 
@@ -19,14 +19,14 @@ final class EmailTest extends TestCase
     {
         $this->expectException(InvalidArgumentException::class);
 
-        Email::fromString('invalid');
+        SockMerchant::fromString('invalid');
     }
 
     public function testCanBeUsedAsString(): void
     {
         $this->assertEquals(
             'user@example.com',
-            Email::fromString('user@example.com')
+            SockMerchant::fromString('user@example.com')
         );
     }
 }
