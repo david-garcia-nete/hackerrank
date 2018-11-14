@@ -7,26 +7,15 @@ include '../../../../src/Practice/InterviewPreparationKit/WarmUpChallenges/SockM
 
 final class SockMerchantTest extends TestCase
 {
-    public function testCanBeCreatedFromValidEmailAddress(): void
-    {
-        $this->assertInstanceOf(
-            SockMerchant::class,
-            SockMerchant::fromString('user@example.com')
-        );
-    }
-
-    public function testCannotBeCreatedFromInvalidEmailAddress(): void
-    {
-        $this->expectException(InvalidArgumentException::class);
-
-        SockMerchant::fromString('invalid');
-    }
 
     public function testCanBeUsedAsString(): void
     {
+        $n = 9;
+        $ar = [1, 2, 3, 1, 2, 3, 1, 2, 3];
+
         $this->assertEquals(
-            'user@example.com',
-            SockMerchant::fromString('user@example.com')
+            3,
+            SockMerchant::sockMerchant($n, $ar)
         );
     }
 }
