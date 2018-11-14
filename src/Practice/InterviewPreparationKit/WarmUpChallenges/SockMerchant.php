@@ -3,12 +3,12 @@
 final class SockMerchant
 {
 
-    private function __construct()
+    public function __construct()
     {
 
     }
 
-    public static function SockMerchant($n, $ar): int
+    public function SockMerchant($n, $ar): int
     {
 
         $temp = [];

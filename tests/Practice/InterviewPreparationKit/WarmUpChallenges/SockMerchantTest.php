@@ -1,20 +1,21 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-include '../../../../src/Practice/InterviewPreparationKit/WarmUpChallenges/SockMerchant.php';
+include '/home/david/PhpstormProjects/hackerrank/src/Practice/InterviewPreparationKit/WarmUpChallenges/SockMerchant.php';
 
 final class SockMerchantTest extends TestCase
 {
 
     public function testSockMerchant(): void
     {
+        $sockMerchant = new SockMerchant();
 
         $n = 9;
         $ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 
         $this->assertEquals(
             3,
-            SockMerchant::sockMerchant($n, $ar)
+            $sockMerchant->sockMerchant($n, $ar)
         );
 
         $n = 10;
@@ -22,7 +23,7 @@ final class SockMerchantTest extends TestCase
 
         $this->assertEquals(
             4,
-            SockMerchant::sockMerchant($n, $ar)
+            $sockMerchant->sockMerchant($n, $ar)
         );
 
     }
