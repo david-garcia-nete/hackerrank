@@ -23,14 +23,14 @@ final class SockMerchant
             } else {
 
                 $temp[$sockColor] = 1;
-
             }
 
         }
 
         foreach ($temp as $sockColor) {
 
-            $pairCount += $sockColor % 2;
+            $pairCount += $sockColor / 2;
+            $pairCount = intval($pairCount);
 
         }
 

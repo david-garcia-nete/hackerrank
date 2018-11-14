@@ -8,6 +8,7 @@ final class SockMerchantTest extends TestCase
 
     public function testSockMerchant(): void
     {
+
         $n = 9;
         $ar = [10, 20, 20, 10, 10, 30, 50, 10, 20];
 
