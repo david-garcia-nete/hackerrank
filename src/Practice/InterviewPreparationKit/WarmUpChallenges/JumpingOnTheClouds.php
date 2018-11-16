@@ -38,6 +38,10 @@ final class JumpingOnTheClouds
 
                     }
 
+                } else {
+
+                    $stepCount++;
+
                 }
 
             }else{
