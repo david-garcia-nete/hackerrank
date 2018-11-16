@@ -15,9 +15,11 @@ final class CountingValleys
 
         $valleyCount = 0;
 
+        $s = str_split($s);
+
         foreach ($s as $step) {
 
-            if ($step == 'U') {
+            if ($step === 'U') {
 
                 if($meter === -1) $valleyCount++;
 
@@ -25,7 +27,7 @@ final class CountingValleys
 
             }
 
-            if ($step == 'D') {
+            if ($step === 'D') {
 
                 $meter--;
 
