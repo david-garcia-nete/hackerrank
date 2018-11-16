@@ -22,17 +22,21 @@ final class JumpingOnTheClouds
 
             if($skip === false && ($skipKey || $nextKey)) {
 
-                if ($c[$index + 2] === 0) {
+                if ($skipKey) {
 
-                    $skip = true;
+                    if ($c[$index + 2] === 0) {
 
-                    $stepCount++;
+                        $skip = true;
 
-                } else {
+                        $stepCount++;
 
-                    $skip = false;
+                    }else{
 
-                    $stepCount++;
+                        $skip = false;
+
+                        $stepCount++;
+
+                    }
 
                 }
 

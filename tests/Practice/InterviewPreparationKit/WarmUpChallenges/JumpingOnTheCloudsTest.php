@@ -19,7 +19,7 @@ final class JumpingOnTheCloudsTest extends TestCase
         );
 
         $n = 6;
-        $c = [0, 0, 0, 0, 1, 0];
+        $c = [0, 0, 0, 1, 0, 0];
 
         $this->assertEquals(
             3,
