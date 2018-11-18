@@ -23,6 +23,7 @@ final class RepeatedString
             $character = $s[$pointer];
             if ($character === "a") $aCount++;
             if ($pointer === $stringLength-1) $pointer = 0;
+            $pointer++;
         }
 
         return $aCount;
