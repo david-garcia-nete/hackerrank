@@ -10,20 +10,20 @@ final class RepeatedStringTest extends TestCase
     {
         $repeatedString = new RepeatedString();
 
-        $n = 7;
-        $c = [0, 0, 1, 0, 0, 1, 0];
+        $n = 10;
+        $s = "aba";
 
         $this->assertEquals(
-            4,
-            $repeatedString->repeatedString($c)
+            7,
+            $repeatedString->repeatedString($s, $n)
         );
 
-        $n = 6;
-        $c = [0, 0, 0, 1, 0, 0];
+        $n = 1000000000000;
+        $s = "a";
 
         $this->assertEquals(
-            3,
-            $repeatedString->repeatedString($c)
+            1000000000000,
+            $repeatedString->repeatedString($s, $n)
         );
 
     }
