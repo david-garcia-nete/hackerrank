@@ -10,6 +10,28 @@ final class RepeatedString
 
     public function RepeatedString($s, $n): int
     {
+        $stringLength = strlen($s);
+
+        $saCount = $this->countAs($s, $stringLength);
+
+        $sCount = $n / $stringLength;
+
+        $mostAs = $saCount * $saCount;
+
+        $mostAsLength = $sCount * $stringLength;
+
+        $remainingCharacters = $n - $mostAsLength;
+
+        $remainingAs = $this->countAs($s, $remainingCharacters);
+
+        $aCount = $mostAs + $remainingAs;
+
+        return $aCount;
+
+    }
+
+    private function countAs($s, $n): int
+    {
 
         $aCount = 0;
 
