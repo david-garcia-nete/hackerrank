@@ -17,8 +17,6 @@ final class RepeatedString
 
         $pointer = 0;
 
-        $pointerTemp = 0;
-
         $stringLength = strlen($s);
 
         $stringLengthMinusOne = $stringLength-1;
