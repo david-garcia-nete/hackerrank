@@ -17,12 +17,16 @@ final class RepeatedString
 
         $pointer = 0;
 
+        $pointerTemp = 0;
+
         $stringLength = strlen($s);
+
+        $stringLengthMinusOne = $stringLength-1;
 
         while($counter < $n){
             $character = $s[$pointer];
             if ($character === "a") $aCount++;
-            if ($pointer === $stringLength-1){
+            if ($pointer == $stringLengthMinusOne){
                 $pointer = 0;
             }else{
                 $pointer++;
