@@ -19,11 +19,13 @@ final class RepeatedString
 
         $stringLength = strlen($s);
 
+        if($stringLength == 1 && $s == 'a') return $n;
+
         $stringLengthMinusOne = $stringLength-1;
 
         while($counter < $n){
             $character = $s[$pointer];
-            if ($character === "a") $aCount++;
+            if ($character == "a") $aCount++;
             if ($pointer == $stringLengthMinusOne){
                 $pointer = 0;
             }else{

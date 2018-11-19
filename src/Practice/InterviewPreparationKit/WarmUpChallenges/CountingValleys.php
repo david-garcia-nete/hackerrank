@@ -19,15 +19,15 @@ final class CountingValleys
 
         foreach ($s as $step) {
 
-            if ($step === 'U') {
+            if ($step == 'U') {
 
-                if($meter === -1) $valleyCount++;
+                if($meter == -1) $valleyCount++;
 
                 $meter++;
 
             }
 
-            if ($step === 'D') {
+            if ($step == 'D') {
 
                 $meter--;
 

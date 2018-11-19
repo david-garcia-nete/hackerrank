@@ -20,11 +20,11 @@ final class JumpingOnTheClouds
             $skipKey = array_key_exists($index + 2, $c);
             $nextKey = array_key_exists($index + 1, $c);
 
-            if($skip === false && ($skipKey || $nextKey)) {
+            if($skip == false && ($skipKey || $nextKey)) {
 
                 if ($skipKey) {
 
-                    if ($c[$index + 2] === 0) {
+                    if ($c[$index + 2] == 0) {
 
                         $skip = true;
 
