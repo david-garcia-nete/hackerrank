@@ -9,7 +9,7 @@ final class RepeatedStringTest extends TestCase
     public function testRepeatedString(): void
     {
         $repeatedString = new RepeatedString();
-
+        
         $n = 10;
         $s = "aba";
 
@@ -23,6 +23,22 @@ final class RepeatedStringTest extends TestCase
 
         $this->assertEquals(
             1000000000000,
+            $repeatedString->repeatedString($s, $n)
+        );
+
+        $n = 3;
+        $s = "aaabbbbabbabbabbabbabbabbabba";
+
+        $this->assertEquals(
+            3,
+            $repeatedString->repeatedString($s, $n)
+        );
+
+        $n = 25;
+        $s = "aaabbbbabbabbabbabbabbabbabba";
+
+        $this->assertEquals(
+            9,
             $repeatedString->repeatedString($s, $n)
         );
 

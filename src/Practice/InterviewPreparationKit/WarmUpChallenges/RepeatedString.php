@@ -16,7 +16,9 @@ final class RepeatedString
 
         $sCount = $n / $stringLength;
 
-        $mostAs = $saCount * $saCount;
+        $sCount = intval($sCount);
+
+        $mostAs = $sCount * $saCount;
 
         $mostAsLength = $sCount * $stringLength;
 
@@ -40,8 +42,6 @@ final class RepeatedString
         $pointer = 0;
 
         $stringLength = strlen($s);
-
-        if($stringLength == 1 && $s == 'a') return $n;
 
         $stringLengthMinusOne = $stringLength-1;
 
