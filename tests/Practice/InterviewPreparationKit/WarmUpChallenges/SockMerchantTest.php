@@ -1,7 +1,7 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
-include '/home/david/PhpstormProjects/hackerrank/src/Practice/InterviewPreparationKit/WarmUpChallenges/SockMerchant.php';
+include 'C:\Users\robert\PhpstormProjects\hackerrank\src\Practice\InterviewPreparationKit\WarmUpChallenges\SockMerchant.php';
 
 final class SockMerchantTest extends TestCase
 {
